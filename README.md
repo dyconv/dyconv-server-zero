@@ -7,14 +7,14 @@ PROBLEMS SOLVED
 * Able to reply to interesting parts of the backlogs and revive conversations that never deserved to die. [without causing undue distraction from whatever the group has moved onto since.]
 * Prevents off-topic or otherwise uninteresting conversations from dominating the channel and killing leagues of innocent conversations yet to be conceived.
 * Allows off-topic or otherwise subjectively uninteresting conversations to take place anyway, and provides methods for other people in the channel to notice them and join right in if that's what they're into.
-* It's possible to have one on one conversations without going through the awkwardness or suffering the constraint of it being fully private, nor do you have to clog up any channel with very . users.notify(new conversation(topics/channel). It will be a new bubble discoverable according to its topics/channel/participants.
+* It's possible to have one on one conversations without going through the awkwardness or suffering the constraint of it being fully private, nor do you have to clog up any channel with content that is only relevant to two people.
 
 [Things we might as well fix while we're at it]
 * You don't need to host a fucking bouncer to have access to the backlog[though public logging for channels can be optional, of course]
 * user icons and more detailed public profiles. Yes, this is necessary. IRC is a place where networking occurs, and 10 character names are not sufficient characterization for most people to remember the interactions and observations they have had with a person.
 user icons may be simple geometric shapes[no dick pics up in your face, provides a consistent look, can assign a generated icon to users who couldn't be bothered configuring their own.]
 * detailed user profiles are of course optional, as is a real name.
-it might be a good idea to generate little audio chimes for people as well.. why havn't I explroed this area.
+it might be a good idea to generate little audio chimes for people as well.. why havn't I explored this area.
 * knowing whether your friends are around[if that's information they grant you].
 
 
