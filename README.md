@@ -15,7 +15,7 @@ PROBLEMS SOLVED
 
 [Things we might as well fix while we're at it]
 
-+ You don't necessarilly need to host a fucking bouncer to have access to the backlog. [though public logging for channels can be optional, of course]
++ Standard way of reviewing publicly logged conversation.
 + It's made easier to characterize and remember the people you're interacting with. There are two ways we could attack this. One is making it easy to review past interactions with a person, that lets you build up a profile on them organically and is basically equivalent to a log search. The other way to attack it is with user icons and more detailed public profiles. User icons could be simple geometric shapes, if you like[no wangs, provides a consistent look, can assign a generated icon to users who couldn't be bothered configuring their own.]. Detailed user profiles are of course optional.
 
 
@@ -48,6 +48,6 @@ A dyconv channel has many **conversations**. A conversation iss a frontier of ac
 
 + Other.
 
-In the default state, a user's attention is split between multiple conversations. Conversations on the edge of their attention will drop in and out of view as other low-salience conversations jostle for the position. Whenever a user replies to an older comment, a branch occurs. Branched conversations will be visible indented within the main line, but once the fronteirs of activity reach a certain distance[say, once it's been scrolled off-screen by the activity on the main fronteir], a branched conversation may be considered separate. To remain in view it will have to vie for the salience to afford its own window alongside the rest of the conversations in the channel.
+In the default state, a user's attention is split between multiple conversations. Conversations on the edge of their attention will drop in and out of view as other low-salience conversations jostle for the position. Whenever a user replies to an older comment, a branch occurs. Branched conversations will be visible indented within the main line, but once the fronteirs of activity reach a certain distance[say, once it's been scrolled off-screen by the activity on the main frontier], a branched conversation may be considered separate. To remain in view it will have to vie for the salience to afford its own window alongside the rest of the conversations in the channel.
 
-This allows many distinct threads to organically emerge and coexist. In addition to things this model *fixes*, it should boost user productivity by ensuring that a user is always able to keep engaged by some frontier, even if the one they were paying attention to a moment ago has fallen silent for the moment. There will always be a fronteir where someone is talking or where a reply may be written.
+This allows many distinct threads to organically emerge and coexist.
