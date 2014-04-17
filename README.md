@@ -2,7 +2,7 @@
 
 DYCONV
 ======
-A vision of a better free-form group chat system. A general solution to a large number of underobserved flaws in the status quo.
+A concept for a better free-form group chat system. A general solution to a large number of underobserved flaws in the status quo, IRC and Twitter.
 
 To cut to the chase,
 
@@ -11,13 +11,12 @@ PROBLEMS SOLVED
 + Able to reply directly to interesting parts of the backlogs and revive conversations that never deserved to die.
 + Prevents off-topic or otherwise uninteresting conversations from dominating the channel and killing leagues of innocent conversations yet to be conceived.
 + Allows off-topic or otherwise subjectively uninteresting conversations to take place anyway, and provides methods for other people in the channel to notice them and join right in if that's what they're into.
-+ It's possible to have one on one conversations without going through the awkwardness or suffering the constraint of it being fully private, nor do you have to clog up any channel with very personally specific dialog.
++ It's possible to have one on one conversations without clogging the channel with impenatrably personal dialog, *and* without the awkwardness or constraint of it being fully private.
 
 [Things we might as well fix while we're at it]
 
 + You don't necessarilly need to host a fucking bouncer to have access to the backlog. [though public logging for channels can be optional, of course]
-+ It's made easier to characterize and remember the people you're interacting with. There are two ways we could attack this. One is making it easy to review past interactions with a person. The other way to attack it is with user icons and more detailed public profiles. User icons could be simple geometric shapes, if you like[no dick pics up in your face, provides a consistent look, can assign a generated icon to users who couldn't be bothered configuring their own.]. Detailed user profiles are of course optional.
-+ being able to tell whether your friends are around[if that's information they grant you].
++ It's made easier to characterize and remember the people you're interacting with. There are two ways we could attack this. One is making it easy to review past interactions with a person, that lets you build up a profile on them organically and is basically equivalent to a log search. The other way to attack it is with user icons and more detailed public profiles. User icons could be simple geometric shapes, if you like[no wangs, provides a consistent look, can assign a generated icon to users who couldn't be bothered configuring their own.]. Detailed user profiles are of course optional.
 
 
 PROBLEMS INTRODUCED
@@ -31,19 +30,13 @@ tbg
 VISION DETAIL
 =============
 
-When a user views a channel, they see a number of **conversations** with with varying levels of detail proportionate to their **salience ratings**, in separate partitions of the screen. One may fill half the screen, another may only show a few lines at a time, some might just be minimized to the point of being pixels that flash every time a comment gets posted indicating only than that there are more conversations going on.
-Dyconv tries to have a memory. It supports centralized logging*. Though active conversations may be represented almost entirely as the linear sequences we're familiar with on IRC already, if you're doing any amount of backlog reading, the conversations would be better represented and explored in a tree structure. Many subconversations were started as replies to some comment older than the most recent. For a moment they would be seen embedded, indented in the main conversation[the matter of which thread is the 'main' thread[displayed in line with what it is a reply to rather than indented] is subjective, it is whichever subthread you're focussed on, or has the most salience for you.].
-Anyway, as a result of this, there should be two interaction modes which can be switched between easily, **reading** and **engaging**.
+A dyconv channel has many **conversations**. A conversation iss a frontier of activity. Their **salience**, a determiner of which conversations a user is exposed to and how prominent they are in their feed, is a function of any of the following aspects, in any combination, dynamically adjustable during usage.
 
-A dyconv channel has many conversations. A **conversation** iss a frontier of activity. The **salience** of each conversation iss a function of any of the following list of conversation aspects, in any combination, dynamically adjustable during usage.
++ How active the conversation is.
 
-In decreasing order of importance(
++ Whether you have registered interest in the people involved in it.
 
-+ The amount of activity in the conversation.
-
-+ the people involved[and how much you care about each of them]
-
-+ whether the conversation is a direct offshoot of a conversation you were involved in, and how involved you were at the point of the reply[if you wrote the comment it's replying to, you WILL be notified.]
++ whether the conversation is a direct offshoot of a conversation you were involved in, and whether you were involved at the point of the reply[if you wrote the comment it's replying to, you *will* be notified.]
 
 + the keywords it contains. Or perhaps just #topic tags, which we can expect to be invoked when a user wants to draw the attention of people who might be interested in the conversation.
 
@@ -55,4 +48,6 @@ In decreasing order of importance(
 
 + Other.
 
-)
+In the default state, a user's attention is split between multiple conversations. Conversations on the very edge of their attention will drop in and out of view as other low-salience conversations jostle for the position. Whenever a user replies to an older comment, a branch occurs. Branched conversations will be visible indented within the main line, but once the fronteirs of activity reach a certain distance[say, once it's been scrolled off-screen by the activity on the main fronteir], a branched conversation may be considered separate. To remain in view it will have to vie for the salience to afford its own window alongside the rest of the conversations in the channel.
+
+This allows many conversations to organically emerge and coexist within a single group. Aside from the solutions provided, listed above, this should boost the productivity of a user by ensuring that they're always able to keep engaged in some frontier, even if the one they were paying attention to a moment ago has fallen silent for the moment.
