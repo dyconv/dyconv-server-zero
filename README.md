@@ -44,10 +44,10 @@ A dyconv channel has many **conversations**. A conversation iss a frontier of ac
 
 + Explicit registrations of interest in given conversations or their ancestors.
 
-+ Channel-specific user-voted metrics. Channels could do all sorts of creative things with this. One example might be HootingVolume, how many of the participants are /hooting. Hooting would be for when things are getting  _really_ _dramatic_. Like, big disruption to status quo.
++ Channel-specific user-voted metrics. Channels could do all sorts of creative things with this. One example might be HootingVolume, how many of the participants are /hooting.
 
 + Other.
 
-In the default state, a user's attention is split between multiple conversations. Conversations on the very edge of their attention will drop in and out of view as other low-salience conversations jostle for the position. Whenever a user replies to an older comment, a branch occurs. Branched conversations will be visible indented within the main line, but once the fronteirs of activity reach a certain distance[say, once it's been scrolled off-screen by the activity on the main fronteir], a branched conversation may be considered separate. To remain in view it will have to vie for the salience to afford its own window alongside the rest of the conversations in the channel.
+In the default state, a user's attention is split between multiple conversations. Conversations on the edge of their attention will drop in and out of view as other low-salience conversations jostle for the position. Whenever a user replies to an older comment, a branch occurs. Branched conversations will be visible indented within the main line, but once the fronteirs of activity reach a certain distance[say, once it's been scrolled off-screen by the activity on the main fronteir], a branched conversation may be considered separate. To remain in view it will have to vie for the salience to afford its own window alongside the rest of the conversations in the channel.
 
-This allows many conversations to organically emerge and coexist within a single group. Aside from the solutions provided, listed above, this should boost the productivity of a user by ensuring that they're always able to keep engaged in some frontier, even if the one they were paying attention to a moment ago has fallen silent for the moment.
+This allows many distinct threads to organically emerge and coexist. In addition to things this model *fixes*, it should boost user productivity by ensuring that a user is always able to keep engaged by some frontier, even if the one they were paying attention to a moment ago has fallen silent for the moment. There will always be a fronteir where someone is talking or where a reply may be written.
